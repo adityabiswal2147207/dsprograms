@@ -188,33 +188,20 @@ int main()
     treeorder(root);
     printf("\n");
 
-    /*inserting new node values for the second part of the
-    quetion*/
-    // printf("\nsecond part");
-    // root = new_node(70);
-    // insert(root,60);
-    // insert(root,80);
-    // insert(root,50);
-    // insert(root,65);
-    // insert(root,45);
-    // insert(root,55);
-    // insert(root,75);
-    // insert(root,85);
-    // insert(root,90);
-
-    // treeorder(root);
     // deleting two nodes from the tree-->
     printf("\n\n\n\n");
     printf("\nAfter deleting the node values 85 and 60\n\n");
-    root = delete (root, 85);
-    root = delete (root, 60);
+    root = delete (root,85);
+    printf("\n");
+    postorder(root);
+    root = delete (root,60);
 
     /*Again arranging it in
     treeorder
     inorder
     postorder to see the
     arrangement of the tree*/
-
+    printf("\n");
     printf("Using Inorder Method:-> ");
     inorder(root);
     printf("\n");
